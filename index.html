@@ -1,0 +1,1892 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 5</title>
+    <!---------------------------------------------Bootstrap CSS Link------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--------------------------------------------Font Family Link---------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100&family=Inter:wght@100;200;300;400;500;600;700;800;900&     family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <!--------------------------------------------CSS SLick Theme Cdn------------------------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--------------------------------------------CSS Slick Min Cdn--------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--------------------------------------------Bootstrap Icons Link------------------------------------>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--------------------------------------------Css File Link------------------------------------------->
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+    <!-- Header  -->
+    <header class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <ul class="navbar-nav d-flex flex-row gap-3 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-bootstrap-fill text-white fs-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sec-clr" href="#">Docs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sec-clr" href="#">Examples</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sec-clr" href="#">Icons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sec-clr" href="#">Theme</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sec-clr" href="#">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <div class=" d-flex justify-content-center mt-3">
+                        <form class="position-relative" action="#">
+                            <i class="bi bi-search text-white fs-5 position-absolute mt-1 ms-2"></i>
+                            <input class="search-box border rounded-2 py-1 px-5 text-white" type="search" name="search"
+                                id="search" placeholder="Search">
+                            <button class="position-absolute button border-0 rounded-1 sec-clr" type="button">CTRL
+                                K</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <ul class="navbar-nav d-flex flex-row gap-3 mt-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-github sec-clr"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-twitter sec-clr"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-opencollective sec-clr"></i></a>
+                        </li>
+                        <hr class="text-white mt-1 py-3">
+                        <div class="dropdown">
+                            <button class="dropdown-toggle pri-bg-clr border-0 text-white mt-2" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                v5.3
+                            </button>
+                            <ul class="dropdown-menu bg-dark text-white px-2 ">
+                                <li>
+                                    <h6 class="text-white-50">v5 releases</h6>
+                                <li class="d-flex align-items-center">
+                                    <a class="dropdown-item text-white rounded-1" href="#">Latest (5.2.x)</a>
+                                    <i class="bi bi-check text-white fs-4"></i>
+                                </li>
+                                <li><a class="dropdown-item text-white rounded-1" href="#">v5.2.3</a></li>
+                                <li><a class="dropdown-item text-white rounded-1" href="#">v5.1.3</a></li>
+                                <li><a class="dropdown-item text-white rounded-1" href="#">v5.0.2</a></li>
+                                <hr>
+                                <li>
+                                    <h6 class="text-white-50">Pervious releases</h6>
+                                </li>
+                                <li><a class="dropdown-item text-white rounded-1" href="#">v4.6.x</a></li>
+                                <li><a class="dropdown-item text-white rounded-1" href="#">v3.4.1</a></li>
+                                <li><a class="dropdown-item text-white rounded-1" href="#">v2.3.2</a></li>
+                            </ul>
+                        </div>
+                        <hr class="text-white mt-1 py-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-moon-stars-fill sec-clr"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container d-flex">
+        <aside class="mt-4 overflow-x-auto col-2 position-sticky top-0">
+            <!-- Nav tabs -->
+            <div>
+                <a class="d-flex gap-2 text-decoration-none" data-bs-toggle="collapse" href="#collapseExample"
+                    role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="bi bi-book-half"></i>
+                    <p class="text-white nav-link fw-bold fs-6">Getting Started</p>
+                </a>
+                <div class="collapse" id="collapseExample">
+                    <div class="nav nav-tabs border-0 d-flex flex-column" id="nav-tab" role="tablist">
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start"
+                            id="nav-Introduction-tab" data-bs-toggle="tab" data-bs-target="#nav-Introduction"
+                            type="button" role="tab" aria-controls="nav-Introduction"
+                            aria-selected="true">Introduction</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start" id="nav-Download-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Download" type="button" role="tab"
+                            aria-controls="nav-Download" aria-selected="true">Download</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 me-0 text-start"
+                            id="nav-Browers-support-tab" data-bs-toggle="tab" data-bs-target="#nav-Browers-support"
+                            type="button" role="tab" aria-controls="nav-Browers-support"
+                            aria-selected="true">Browers-support</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a class="d-flex gap-2 text-decoration-none" data-bs-toggle="collapse" href="#collapseExample"
+                    role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="bi bi-grid-fill"></i>
+                    <p class="text-white nav-link fw-bold fs-6">Layout</p>
+                </a>
+                <div class="collapse" id="collapseExample">
+                    <div class="nav nav-tabs border-0 d-flex flex-column" id="nav-tab" role="tablist">
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start" id="nav-Breakpoints-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Breakpoints" type="button" role="tab"
+                            aria-controls="nav-Breakpoints" aria-selected="true">Breakpoints</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start" id="nav-Container-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Container" type="button" role="tab"
+                            aria-controls="nav-Container" aria-selected="true">Container</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 me-0 text-start" id="nav-Grid-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Grid" type="button" role="tab"
+                            aria-controls="nav-Grid" aria-selected="true">Grid</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 me-0 text-start" id="nav-Column-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Column" type="button" role="tab"
+                            aria-controls="nav-Column" aria-selected="true">Column</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a class="d-flex gap-2 text-decoration-none" data-bs-toggle="collapse" href="#collapseExample"
+                    role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="bi bi-ui-radios"></i>
+                    <p class="text-white nav-link fw-bold fs-6">Forms</p>
+                </a>
+                <div class="collapse" id="collapseExample">
+                    <div class="nav nav-tabs border-0 d-flex flex-column" id="nav-tab" role="tablist">
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start" id="nav-Overview-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Overview" type="button" role="tab"
+                            aria-controls="nav-Overview" aria-selected="true">Overview</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start"
+                            id="nav-Form-Control-tab" data-bs-toggle="tab" data-bs-target="#nav-Form-Control"
+                            type="button" role="tab" aria-controls="nav-Form-Control"
+                            aria-selected="true">Form-Control</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 me-0 text-start" id="nav-Select-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Select" type="button" role="tab"
+                            aria-controls="nav-Select" aria-selected="true">Select</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 me-0 text-start" id="nav-Radios-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Radios" type="button" role="tab"
+                            aria-controls="nav-Radios" aria-selected="true">Radios</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 me-0 text-start" id="nav-Range-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Range" type="button" role="tab"
+                            aria-controls="nav-Range" aria-selected="true">Range</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 me-0 text-start" id="nav-Input-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Input" type="button" role="tab"
+                            aria-controls="nav-Input" aria-selected="true">Input</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 me-0 text-start" id="nav-Layout-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Layout" type="button" role="tab"
+                            aria-controls="nav-Layout" aria-selected="true">Layout</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a class="d-flex gap-2 text-decoration-none" data-bs-toggle="collapse" href="#collapseExample3"
+                    role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="bi bi-braces-asterisk"></i>
+                    <p class="text-white nav-link fw-bold fs-6">Utilites</p>
+                </a>
+                <div class="collapse" id="collapseExample3">
+                    <div class="nav nav-tabs border-0 d-flex flex-column" id="nav-tab" role="tablist">
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start" id="nav-Background-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Background" type="button" role="tab"
+                            aria-controls="nav-Background" aria-selected="true">Background</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start" id="nav-Borders-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Borders" type="button" role="tab"
+                            aria-controls="nav-Borders" aria-selected="true">Borders</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start" id="nav-Colors-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Colors" type="button" role="tab"
+                            aria-controls="nav-Colors" aria-selected="true">Colors</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start" id="nav-Display-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Display" type="button" role="tab"
+                            aria-controls="nav-Display" aria-selected="true">Display</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start" id="nav-Flex-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Flex" type="button" role="tab"
+                            aria-controls="nav-Flex" aria-selected="true">Flex</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start" id="nav-Link-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Link" type="button" role="tab"
+                            aria-controls="nav-Link" aria-selected="true">Link</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start" id="nav-Opacity-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Opacity" type="button" role="tab"
+                            aria-controls="nav-Opacity" aria-selected="true">Opacity</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start" id="nav-Overflow-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Overflow" type="button" role="tab"
+                            aria-controls="nav-Overflow" aria-selected="true">Overflow</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start" id="nav-Position-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Position" type="button" role="tab"
+                            aria-controls="nav-Position" aria-selected="true">Position</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start" id="nav-Shadows-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Shadows" type="button" role="tab"
+                            aria-controls="nav-Shadows" aria-selected="true">Shadows</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start" id="nav-Spaces-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Spaces" type="button" role="tab"
+                            aria-controls="nav-Spaces" aria-selected="true">Spaces</button>
+                        <button class="nav-link border-0 li-clr px-1 py-0 mb-2 ms-3 text-start" id="nav-Text-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-Text" type="button" role="tab"
+                            aria-controls="nav-Text" aria-selected="true">Text</button>
+
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="col-8">
+            <p class="display-4 fw-bold text-white text-center">Get started with Bootstrap</p>
+            <!-- Tab panes -->
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade" id="nav-Introduction" role="tabpanel" aria-labelledby="nav-Introduction-tab"
+                    tabindex="0">
+                    <div>
+                        <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Introduction</p>
+                        <p class="fs-5 text-white lh-base ps-5">Bootstrap is a popular and widely-used open-source
+                            front-end
+                            framework for web development. It was originally created by Twitter and is now
+                            maintained by the
+                            Bootstrap community. This framework simplifies the process of designing and building
+                            responsive
+                            and attractive web pages and web applications. Bootstrap is known for its pre-designed,
+                            customizable components and responsive grid system, which makes it easier for developers
+                            to
+                            create visually appealing and functional websites.</p>
+                        <p class="fs-4 fw-bold text-danger pt-5 ps-4 pb-3">Key features of Bootstrap include:</p>
+                        <ol class="ps-5">
+                            <li class="nav-item text-white lh-base pb-2">Responsive Design: Bootstrap's grid system
+                                allows
+                                developers to create responsive web layouts that adapt to different screen sizes,
+                                ensuring a
+                                consistent user experience on various devices, from desktops to smartphones.</li>
+                            <li class="nav-item text-white lh-base pb-2">Pre-Designed Components: Bootstrap provides
+                                a rich
+                                set of pre-designed components, such as buttons, navigation bars, forms, modals, and
+                                more.
+                                These components are easily customizable to match your project's style.</li>
+                            <li class="nav-item text-white lh-base pb-2">CSS and JavaScript Framework: Bootstrap
+                                includes a
+                                robust set of CSS and JavaScript files that help streamline the development process.
+                                It also
+                                offers utility classes for common tasks like spacing and typography.</li>
+                            <li class="nav-item text-white lh-base pb-2">Browser Compatibility: Bootstrap is
+                                designed to
+                                work well with modern web browsers and maintains backward compatibility with older
+                                versions,
+                                ensuring a wide reach for your web projects.</li>
+                            <li class="nav-item text-white lh-base pb-2">xtensibility: While Bootstrap offers a
+                                comprehensive set of components and styles, you can extend it further by creating
+                                custom
+                                themes or integrating third-party plugins.</li>
+                            <li class="nav-item text-white lh-base">Active Community: The Bootstrap community is
+                                active and
+                                engaged, providing support, documentation, and numerous resources for developers.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Download" role="tabpanel" aria-labelledby="nav-Download-tab"
+                    tabindex="0">
+                    <div>
+                        <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Download</p>
+                        <p class="fs-5 text-white lh-base ps-5 fw-lighter">Using Bootstrap in a website involves
+                            several
+                            steps to
+                            integrate the Bootstrap framework and its components into your HTML and CSS. Here is a
+                            step-by-step procedure to help you get started with Bootstrap:</p>
+                        <ol class="navbar-nav">
+                            <li class="text-black-50 bg-white pb-2 fw-bold text-center fs-5 mb-3">Download or Link
+                                to
+                                Bootstrap:</li>
+                            <li class="text-white pb-4 ">You have two options to include Bootstrap in your project:
+                                <ol>
+                                    <li class="text-white pb-3 fw-bold "> Download Bootstrap
+                                        <ul>
+                                            <li class="fw-normal">Visit the official Bootstrap website at <a
+                                                    href="#">getbootstrap.com</a>.
+                                            </li>
+                                            <li class="fw-normal">Download the latest version of Bootstrap. This
+                                                will
+                                                include CSS, JavaScript,
+                                                and other necessary files.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-white pb-3 fw-bold "> Link to Bootstrap via Content Delivery
+                                        Network
+                                        (CDN):
+                                        <ul>
+                                            <li class="fw-normal">You can link to Bootstrap directly from a CDN by
+                                                adding
+                                                the following lines
+                                                to your HTML file's
+
+                                                <head> section. This is a convenient option for quickly trying out
+                                                    Bootstrap.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Browers-support" role="tabpanel"
+                    aria-labelledby="nav-Browers-support-tab" tabindex="0">
+                    <div>
+                        <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Browers Support</p>
+                        <p class="fs-5 text-white lh-base ps-5 fw-lighter">Bootstrap, as a widely used front-end
+                            framework,
+                            is designed to be compatible with a broad range of modern web browsers. As of my last
+                            knowledge
+                            update in January 2022, Bootstrap is supported by the following major web browsers:</p>
+                        <ul class="navbar-nav mt-5 ms-5">
+                            <li class="d-flex gap-4 align-items-center">
+                                <i class="bi bi-browser-chrome text-danger fs-2"></i>
+                                <p class="text-white-50 fw-bold pt-3">Chrome Browser</p>
+                            </li>
+                            <li class="d-flex gap-4 align-items-center">
+                                <i class="bi bi-browser-firefox fs-2 text-warning-emphasis"></i>
+                                <p class="text-white-50 fw-bold pt-3">Mozilla Firefox</p>
+                            </li>
+                            <li class="d-flex gap-4 align-items-center">
+                                <i class="bi bi-browser-safari text-white fs-2 "></i>
+                                <p class="text-white-50 fw-bold pt-3">Apple Safari</p>
+                            </li>
+                            <li class="d-flex gap-4 align-items-center">
+                                <i class="bi bi-browser-edge fs-2 text-info-emphasis"></i>
+                                <p class="text-white-50 fw-bold pt-3">Microsoft Edge</p>
+                            </li>
+                        </ul>
+                        <p class=" ps-5 text-white pt-4 fs-6 lh-sm">It's important to note that browser support can
+                            change
+                            over time as new versions are released and older versions become less common. Therefore,
+                            it's a
+                            good practice to regularly check Bootstrap's official documentation or website for
+                            updates on
+                            browser compatibility, especially if you are working with a more recent version of the
+                            framework.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade" id="nav-Breakpoints" role="tabpanel" aria-labelledby="nav-Breakpoints-tab"
+                    tabindex="0">
+                    <div>
+                        <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Breakpoints</p>
+                        <p class="fs-5 text-white lh-base ps-5 fw-lighter">Breakpoints are customizable widths that
+                            determine how your responsive layout behaves across device or viewport sizes in
+                            Bootstrap.</p>
+                        <ul class="">
+                            <li class="fw-light pb-3 text-white"> <b class="fw-bold">Extra Small (xs):</b> This is
+                                the
+                                smallest breakpoint and targets devices with very narrow screens, such as
+                                smartphones. The
+                                CSS class prefix for this breakpoint is <b class="fw-bold">col-xs-</b>.</li>
+                            <li class="fw-light pb-3 text-white"><b class="fw-bold">Small (sm):</b> The small
+                                breakpoint is
+                                designed for devices like small tablets and larger smartphones. The CSS class prefix
+                                for
+                                this breakpoint is <b class="fw-bold">col-sm-</b>.</li>
+                            <li class="fw-light pb-3 text-white"><b class="fw-bold">Medium (md):</b> This breakpoint
+                                is
+                                suitable for medium-sized devices, such as larger tablets and small laptops. The CSS
+                                class
+                                prefix for this breakpoint is <b class="fw-bold">col-md-</b>.</li>
+                            <li class="fw-light pb-3 text-white"><b class="fw-bold">Large (lg):</b> The large
+                                breakpoint is
+                                intended for desktop screens and larger laptops. The CSS class prefix for this
+                                breakpoint is
+                                <b class="fw-bold">col-lg-</b>.
+                            </li>
+                            <li class="fw-light pb-3 text-white"><b class="fw-bold">Extra Large (xl):</b> The
+                                extra-large
+                                breakpoint targets larger desktop displays. The CSS class prefix for this breakpoint
+                                is <b class="fw-bold">col-xl-</b>.</li>
+                        </ul>
+                        <div class="code-plate ps-3">
+                            <div class="plate-head">
+                                <p class="text-white-50 pt-3 ps-3">HTML</p>
+                            </div>
+                            <div class="plate-body ps-2">
+                                &lt;div class=&quot;container&quot;&gt; <br>
+                                &lt;div class=&quot;row&quot;&gt; <br>
+                                &lt;div class=&quot;col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2&quot;&gt;<br>
+                                &lt;!-- Content for different screen sizes --&gt;
+                                &lt;/div&gt;<br>
+                                &lt;div class=&quot;col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2&quot;&gt;<br>
+                                &lt;!-- Content for different screen sizes --&gt;
+                                &lt;/div&gt;<br>
+                                &lt;!-- ... more columns ... --&gt;
+                                &lt;/div&gt;<br>
+                                &lt;/div&gt;
+                            </div>
+                        </div>
+                        <p class="fs-3 fw-bold text-white-50 pt-5 ps-3">Media Queries</p>
+                        <p class="fs-5 text-white lh-base ps-5 fw-lighter">Since Bootstrap is developed to be mobile
+                            first,
+                            we use a handful of media queries to create sensible breakpoints for our layouts and
+                            interfaces.
+                            These breakpoints are mostly based on minimum viewport widths and allow us to scale up
+                            elements
+                            as the viewport changes.</p>
+                        <p class="fs-4 text-white pt-3 ps-3">Max & Min width</p>
+                        <div class="code-plate ps-3">
+                            <div class="plate-head">
+                                <p class="text-white-50 pt-3 ps-3">HTML</p>
+                            </div>
+                            <div class="plate-body ps-2 mb-3">
+                                For MAX'
+                                @include media-breakpoint-down(sm) { ... } <br>
+                                @include media-breakpoint-down(md) { ... } <br>
+                                @include media-breakpoint-down(lg) { ... } <br>
+                                For MIN'
+                                @include media-breakpoint-up(xl) { ... } <br>
+                                @include media-breakpoint-up(xxl) { ... }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Container" role="tabpanel" aria-labelledby="nav-Container-tab"
+                    tabindex="0">
+                    <div>
+                        <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Container</p>
+                        <p class="fs-5 text-white lh-base ps-5 fw-lighter">Containers are a fundamental building
+                            block of
+                            Bootstrap that contain, pad, and align your content within a given device or
+                            viewport
+                        </p>
+                        <div class="d-flex justify-content-around">
+                            <div>
+                                <p class="text-white fs-5">.container-xxl</p>
+                            </div>
+                            <div>
+                                <p class="text-white fw-bold">1320px</p>
+                            </div>
+                        </div>
+                        <hr class="text-white ms-5 me-5 my-1">
+                        <div class="d-flex justify-content-around">
+                            <div>
+                                <p class="text-white fs-5">.container-xl</p>
+                            </div>
+                            <div>
+                                <p class="text-white fw-bold">1140px</p>
+                            </div>
+                        </div>
+                        <hr class="text-white ms-5 me-5 my-1">
+                        <div class="d-flex justify-content-around">
+                            <div>
+                                <p class="text-white fs-5">.container-lg</p>
+                            </div>
+                            <div>
+                                <p class="text-white fw-bold">960px</p>
+                            </div>
+                        </div>
+                        <hr class="text-white ms-5 me-5 my-1">
+                        <div class="d-flex justify-content-around">
+                            <div>
+                                <p class="text-white fs-5">.container-md</p>
+                            </div>
+                            <div>
+                                <p class="text-white fw-bold">720px</p>
+                            </div>
+                        </div>
+                        <hr class="text-white ms-5 me-5 my-1">
+                        <div class="d-flex justify-content-around">
+                            <div>
+                                <p class="text-white fs-5">.container-sm</p>
+                            </div>
+                            <div>
+                                <p class="text-white fw-bold">540px</p>
+                            </div>
+                        </div>
+                        <hr class="text-white ms-5 me-5 my-1">
+                        <p class="fs-4 text-white pt-3 ps-3">Container</p>
+                        <div class="code-plate ps-3">
+                            <div class="plate-head">
+                                <p class="text-white-50 pt-3 ps-3">HTML</p>
+                            </div>
+                            <div class="plate-body ps-2">
+                                &lt;div class=&quot;container&quot;&gt; <br>
+                                &lt;!-- Your content goes here --&gt; <br>
+                                &lt;/div&gt;
+                            </div>
+                        </div>
+                        <p class="fs-4 text-white pt-3 ps-3">Container-fluid</p>
+                        <div class="code-plate ps-3">
+                            <div class="plate-head">
+                                <p class="text-white-50 pt-3 ps-3">HTML</p>
+                            </div>
+                            <div class="plate-body ps-2 mb-3">
+                                &lt;div class=&quot;container-fluid&quot;&gt; <br>
+                                &lt;!-- Your full-width content goes here --&gt; <br>
+                                &lt;/div&gt;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Grid" role="tabpanel" aria-labelledby="nav-Grid-tab" tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Grid</p>
+                    <p class="text-white lh-base ps-5 fw-lighter fs-5">The grid system in Bootstrap is a powerful and
+                        flexible layout system that allows web developers to create responsive and organized web page
+                        layouts. Bootstrap's grid system is based on a 12-column layout and uses CSS classes to define
+                        how content is displayed across different screen sizes, making it a key component of creating
+                        responsive designs.</p>
+                    <div class="d-flex">
+                        <div>
+                            <p class="text-danger fs-4 mt-4 fw-bold ps-5">Structure</p>
+                            <p class="text-white lh-sm ps-5 fw-light">The grid system consists of 12 columns by
+                                default. You can customize the number of columns in Bootstrap if needed.
+                                Rows are used to group and align content within a container. Each row can have a maximum
+                                of 12 columns.
+                                Columns are the building blocks of the grid system, and they should always be placed
+                                inside a row.</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fs-4 mt-4 fw-bold ps-5">Column Classes</p>
+                            <p class="text-white lh-sm ps-5 fw-light">Bootstrap provides classes like <b
+                                    class="fw-bold">col-, col-sm-, col-md-, col-lg-,</b> and <b class="fw-bold">col-xl-
+                                </b>to define the number of columns a content block should span at different screen
+                                sizes (breakpoints).
+                                For example, <b class="fw-bold">col-6</b> will make an element span half the width of
+                                its parent container on all screen sizes. <b class="fw-bold">col-sm-4</b> may make the
+                                same element occupy one-third of the width on small screens.</p>
+                        </div>
+                    </div>
+                    <p class="text-white lh-sm ps-5 mt-3 fs-4 fw-light">Use this code to do practice of these classes.
+                    </p>
+                    <div class="code-plate ps-5 my-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-3 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2">
+                            <div class="container">
+                                <h2>Bootstrap Grid System Examples</h2>
+
+                                <!-- Example 1: col- Class (Spans 6 columns on all screen sizes) -->
+                                <div class="row">
+                                    <div class="col-6" style="background-color: #f0ad4e;">Column 1</div>
+                                    <div class="col-6" style="background-color: #5bc0de;">Column 2</div>
+                                </div>
+
+                                <!-- Example 2: col-sm- Class (Spans 12 columns on extra-small screens and 6 columns on small screens and above) -->
+                                <div class="row">
+                                    <div class="col-12 col-sm-6" style="background-color: #5cb85c;">Column 1</div>
+                                    <div class="col-12 col-sm-6" style="background-color: #d9534f;">Column 2</div>
+                                </div>
+
+                                <!-- Example 3: col-md- Class (Spans 12 columns on extra-small screens and 4 columns on medium screens and above) -->
+                                <div class="row">
+                                    <div class="col-12 col-md-4" style="background-color: #5bc0de;">Column 1</div>
+                                    <div class="col-12 col-md-8" style="background-color: #f0ad4e;">Column 2</div>
+                                </div>
+
+                                <!-- Example 4: col-lg- Class (Spans 12 columns on extra-small screens and 3 columns on large screens and above) -->
+                                <div class="row">
+                                    <div class="col-12 col-lg-3" style="background-color: #d9534f;">Column 1</div>
+                                    <div class="col-12 col-lg-9" style="background-color: #5cb85c;">Column 2</div>
+                                </div>
+
+                                <!-- Example 5: col-xl- Class (Spans 12 columns on extra-small screens and 6 columns on extra-large screens) -->
+                                <div class="row">
+                                    <div class="col-12 col-xl-6" style="background-color: #5bc0de;">Column 1</div>
+                                    <div class="col-12 col-xl-6" style="background-color: #f0ad4e;">Column 2</div>
+                                </div>
+                            </div>
+                            <hr>
+                            &lt;!DOCTYPE html&gt; <br>
+                            &lt;html lang=&quot;en&quot;&gt; <br>
+                            &lt;head&gt; <br>
+                            &lt;meta charset=&quot;UTF-8&quot;&gt; <br>
+                            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, <br>
+                            initial-scale=1.0&quot;&gt; <br>
+                            &lt;link rel=&quot;stylesheet&quot; <br>
+                            href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css&quot;&gt;
+                            <br>
+                            &lt;title&gt;Bootstrap Grid Examples&lt;/title&gt; <br>
+                            &lt;/head&gt; <br>
+                            &lt;body&gt; <br>
+
+                            &lt;div class=&quot;container&quot;&gt; <br>
+                            &lt;h2&gt;Bootstrap Grid System Examples&lt;/h2&gt; <br>
+
+                            &lt;!-- Example 1: col- Class (Spans 6 columns on all screen sizes) --&gt; <br>
+                            &lt;div class=&quot;row&quot;&gt; <br>
+                            &lt;div class=&quot;col-6&quot; style=&quot;background-color: #f0ad4e;&quot;&gt;Column <br>
+                            1&lt;/div&gt; <br>
+                            &lt;div class=&quot;col-6&quot; style=&quot;background-color: #5bc0de;&quot;&gt;Column <br>
+                            2&lt;/div&gt; <br>
+                            &lt;/div&gt; <br>
+
+                            &lt;!-- Example 2: col-sm- Class (Spans 12 columns on extra-small screens and 6 columns on
+                            small screens and above) --&gt; <br>
+                            &lt;div class=&quot;row&quot;&gt; <br>
+                            &lt;div class=&quot;col-12 col-sm-6&quot; style=&quot;background-color:
+                            #5cb85c;&quot;&gt;Column 1&lt;/div&gt; <br>
+                            &lt;div class=&quot;col-12 col-sm-6&quot; style=&quot;background-color:
+                            #d9534f;&quot;&gt;Column 2&lt;/div&gt; <br>
+                            &lt;/div&gt; <br>
+
+                            &lt;!-- Example 3: col-md- Class (Spans 12 columns on extra-small screens and 4 columns on
+                            medium screens and above) --&gt; <br>
+                            &lt;div class=&quot;row&quot;&gt; <br>
+                            &lt;div class=&quot;col-12 col-md-4&quot; style=&quot;background-color:
+                            #5bc0de;&quot;&gt;Column 1&lt;/div&gt; <br>
+                            &lt;div class=&quot;col-12 col-md-8&quot; style=&quot;background-color:
+                            #f0ad4e;&quot;&gt;Column 2&lt;/div&gt; <br>
+                            &lt;/div&gt;
+
+                            &lt;!-- Example 4: col-lg- Class (Spans 12 columns on extra-small screens and 3 columns on
+                            large screens and above) --&gt; <br>
+                            &lt;div class=&quot;row&quot;&gt; <br>
+                            &lt;div class=&quot;col-12 col-lg-3&quot; style=&quot;background-color:
+                            #d9534f;&quot;&gt;Column 1&lt;/div&gt; <br>
+                            &lt;div class=&quot;col-12 col-lg-9&quot; style=&quot;background-color:
+                            #5cb85c;&quot;&gt;Column 2&lt;/div&gt; <br>
+                            &lt;/div&gt; <br>
+
+                            &lt;!-- Example 5: col-xl- Class (Spans 12 columns on extra-small screens and 6 columns on
+                            extra-large screens) --&gt; <br>
+                            &lt;div class=&quot;row&quot;&gt; <br>
+                            &lt;div class=&quot;col-12 col-xl-6&quot; style=&quot;background-color:
+                            #5bc0de;&quot;&gt;Column 1&lt;/div&gt; <br>
+                            &lt;div class=&quot;col-12 col-xl-6&quot; style=&quot;background-color:
+                            #f0ad4e;&quot;&gt;Column 2&lt;/div&gt; <br>
+                            &lt;/div&gt; <br>
+                            &lt;/div&gt; <br>
+
+                            &lt;/body&gt; <br>
+                            &lt;/html&gt; <br>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="tab-pane fade" id="nav-Column" role="tabpanel" aria-labelledby="nav-Column-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Column</p>
+                    <p class="text-white lh-base ps-5 fw-lighter fs-5">In Bootstrap, the <b>col</b> classes are an
+                        essential part of the grid system that allows you to define how many columns a content block
+                        should span within a row. The grid system is based on a <b>12-column</b> layout by default, and
+                        the <b>col</b> classes are used to control the width and positioning of elements within this
+                        layout. These classes are highly customizable and are a crucial component of creating responsive
+                        and structured web layouts.</p>
+                    <div class="code-plate ps-5 my-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-3 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6"> <!-- This element spans 6 columns -->
+                                        Content 1
+                                    </div>
+                                    <div class="col-3"> <!-- This element spans 3 columns -->
+                                        Content 2
+                                    </div>
+                                    <div class="col-3"> <!-- This element spans 3 columns -->
+                                        Content 3
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            &lt;div class=&quot;container&quot;&gt;<br>
+                            &lt;div class=&quot;row&quot;&gt;<br>
+                            &lt;div class=&quot;col-6&quot;&gt; &lt;!-- This element spans 6 columns --&gt;<br>
+                            Content 1 <br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;col-3&quot;&gt; &lt;!-- This element spans 3 columns --&gt;<br>
+                            Content 2 <br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;col-3&quot;&gt; &lt;!-- This element spans 3 columns --&gt;<br>
+                            Content 3 <br>
+                            &lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                        </div>
+                    </div>
+                    <p class="text-white lh-base ps-5 fw-lighter fs-6">In this example, we have a row with three
+                        columns, and we've used col classes to specify how many columns each element should span. The
+                        first element spans 6 columns, while the second and third elements each span 3 columns, creating
+                        a row with a total width of 12 columns.</p>
+
+                </div>
+            </div>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade" id="nav-Overview" role="tabpanel" aria-labelledby="nav-Overview-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Form</p>
+                    <p class="text-white lh-base ps-5 fw-lighter fs-5"></p>>Forms are a crucial part of web development,
+                    and Bootstrap offers a comprehensive set of classes and components to streamline the process of
+                    creating attractive and functional forms.</p>
+                    <ul class="navbar-nav">
+                        <li>
+                            <h5 class="fw-bold text-white ">Form Structure:</h3>
+                        </li>
+                        <li class="fw-light pb-3 text-white">Bootstrap forms are built using HTML <b
+                                class="fw-bold">form</b> elements. You
+                            can create basic forms, inline
+                            forms, and horizontal forms with varying structures. The <b>form</b> element is often
+                            wrapped
+                            in a <b class="fw-bold">div</b> with the class <b class="fw-bold">.container,
+                                .container-fluid,</b> or
+                            other grid-related classes to control form layout.</li>
+                        <li>
+                            <h5 class="fw-bold text-white">Form Controls:</h3>
+                        </li>
+                        <li class="fw-light pb-3 text-white">Bootstrap provides classes for various form controls,
+                            including text inputs, textareas,
+                            checkboxes, radio buttons, select dropdowns, and file inputs. These controls can be
+                            customized using classes like .form-control to ensure consistency in appearance and
+                            functionality.</li>
+                        <li>
+                            <h5 class="fw-bold text-white">Form Utilities:</h3>
+                        </li>
+                        <li class="fw-light pb-3 text-white">Bootstrap provides various utility classes for styling form
+                            elements, such as .disabled, .readonly, and .plaintext. These classes help customize the
+                            appearance and behavior of form controls.</li>
+                    </ul>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-3 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <div class="container mt-5">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="username" class="form-label">Username</label>
+                                        <input type="text" class="form-control" id="username"
+                                            placeholder="Enter your username">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password"
+                                            placeholder="Enter your password">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                            <hr>
+                            &lt;div class=&quot;container mt-5&quot;&gt;<br>
+                            &lt;form&gt;<br>
+                            &lt;div class=&quot;mb-3&quot;&gt;<br>
+                            &lt;label for=&quot;username&quot;
+                            class=&quot;form-label&quot;&gt;Username&lt;/label&gt;<br>
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;username&quot;
+                            placeholder=&quot;Enter your username&quot;&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;mb-3&quot;&gt;<br>
+                            &lt;label for=&quot;password&quot;
+                            class=&quot;form-label&quot;&gt;Password&lt;/label&gt;<br>
+                            &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;password&quot;
+                            placeholder=&quot;Enter your password&quot;&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;mb-3 form-check&quot;&gt;<br>
+                            &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot;
+                            id=&quot;rememberMe&quot;&gt;<br>
+                            &lt;label class=&quot;form-check-label&quot; for=&quot;rememberMe&quot;&gt;Remember
+                            me&lt;/label&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;button type=&quot;submit&quot; class=&quot;btn
+                            btn-primary&quot;&gt;Submit&lt;/button&gt;<br>
+                            &lt;/form&gt;<br>
+                            &lt;/div&gt;<br>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Form-Control" role="tabpanel" aria-labelledby="nav-Form-Control-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Form-Control</p>
+                    <p class="text-white lh-base ps-5 fw-lighter fs-5">In Bootstrap, form controls are a key part of
+                        creating well-styled and functional forms on your web pages. Form controls are HTML elements
+                        like text inputs, checkboxes, radio buttons, select dropdowns, and more, which Bootstrap
+                        enhances with its own CSS classes and JavaScript for added functionality and consistency. Here's
+                        an overview of form controls in Bootstrap:</p>
+                    <p class="fw-bold text-white fs-5 ps-3">1. Text Input</p>
+                    <p class="fw-light pb-3 text-white ps-3">Bootstrap styles text inputs with the .form-control class.
+                        This
+                        class ensures that the text inputs have consistent sizing, padding, and border styling.</p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <input type="text" class="form-control" placeholder="Username">
+                            <hr>
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot;
+                            placeholder=&quot;Username&quot;&gt;
+                        </div>
+                    </div>
+                    <p class="fw-bold text-white fs-5 ps-3">2. Textarea:</p>
+                    <p class="fw-light pb-3 text-white ps-3">Textareas in Bootstrap are styled similarly to text inputs.
+                        You
+                        can use the .form-control class for consistent styling.</p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <textarea class="form-control" placeholder="Enter your message"></textarea>
+                            <hr>
+                            &lt;textarea class=&quot;form-control&quot; placeholder=&quot;Enter your
+                            message&quot;&gt;&lt;/textarea&gt;
+                        </div>
+                    </div>
+                    <p class="fw-bold text-white fs-5 ps-3">4. Checkboxes and Radio Buttons:</p>
+                    <p class="fw-light pb-3 text-white ps-3">Bootstrap provides custom-styled checkboxes and radio
+                        buttons.
+                        You can use classes like .form-check and .form-check-input to create visually appealing options.
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                                <label class="form-check-label" for="exampleCheckbox">Check this box</label>
+                            </div>
+                            <hr>
+                            &lt;&lt;div class=&quot;form-check&quot;&gt; <br>
+                            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot;<br>
+                            id=&quot;exampleCheckbox&quot;&gt;<br>
+                            &lt;label class=&quot;form-check-label&quot; for=&quot;exampleCheckbox&quot;&gt;Check this
+                            box&lt;/label&gt;<br>
+                            &lt;/div&gt;
+                        </div>
+                    </div>
+                    <p class="fw-bold text-white fs-5 ps-3">5. Disabled and Readonly:</p>
+                    <p class="fw-light pb-3 text-white ps-3">You can add the .disabled class to form controls to make
+                        them
+                        appear disabled. For readonly inputs, use the .readonly class. These classes help indicate the
+                        state of the control.</p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <input type="text" class="form-control disabled" placeholder="Disabled Input" disabled>
+                            <input type="text" class="form-control readonly" value="Readonly Input" readonly>
+                            <hr>
+                            &lt;input type=&quot;text&quot; class=&quot;form-control disabled&quot;<br>
+                            placeholder=&quot;Disabled Input&quot; disabled&gt;<br>
+                            &lt;input type=&quot;text&quot; class=&quot;form-control readonly&quot; value=&quot;Readonly
+                            <br>
+                            Input&quot; readonly&gt;<br>
+                        </div>
+                    </div>
+                    <p class="fw-bold text-white fs-5 ps-3">1. Plaintext:</p>
+                    <p class="fw-light pb-3 text-white ps-3">For read-only, non-editable text, you can use the
+                        .form-control-plaintext class to style text inputs and textareas.</p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <input type="text" class="form-control-plaintext" value="Read-only text">
+                            <hr>
+                            &lt;input type=&quot;text&quot; class=&quot;form-control-plaintext&quot;
+                            value=&quot;Read-only text&quot;&gt;
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Select" role="tabpanel" aria-labelledby="nav-Select-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Select</p>
+                    <p class="text-white lh-base ps-5 fw-lighter fs-5">In Bootstrap, the <b class="fw-bold">select</b>
+                        element is used to create dropdown menus, and it can be styled and enhanced using Bootstrap
+                        classes to ensure a consistent and visually appealing appearance. Here's an overview of using <b
+                            class="fw-bold">select</b> elements in Bootstrap:</p>
+                    <p class="fw-bold text-white fs-5 ps-3">Basic Select Element:</p>
+                    <p class="fw-light pb-3 text-white ps-3">To create a basic dropdown menu, you can use the <b
+                            class="fw-bold">select</b> element. Bootstrap provides the <b>.form-select</b> class to
+                        style it appropriately.
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <select class="form-select">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <hr>
+                            &lt;select class=&quot;form-select&quot;&gt;<br>
+                            &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;<br>
+                            &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;<br>
+                            &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;<br>
+                            &lt;/select&gt;
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Radios" role="tabpanel" aria-labelledby="nav-Radios-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Radios</p>
+                    <p class="text-white lh-base ps-5 fw-lighter fs-5">
+                        In Bootstrap, you can create custom-styled radio buttons and checkboxes using classes and
+                        elements provided by the framework. This allows you to have visually appealing and consistent UI
+                        elements in your web forms. Here's an overview of using radio buttons and checkboxes in
+                        Bootstrap:</p>
+                    <p class="fw-bold text-white fs-5 ps-3">Basic Radio Buttons:</p>
+                    <p class="fw-light pb-3 text-white ps-3">To create a basic radio button in Bootstrap, use the <b
+                            class="fw-bold">input</b> element with the <b class="fw-bold">type="radio"</b> attribute and
+                        apply the <b class="fw-bold">.form-check-input</b> class for styling. To associate a label with
+                        the radio button, use the <b class="fw-bold">.form-check-label</b> class.
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioOptions" id="radioOption1"
+                                    value="option1">
+                                <label class="form-check-label" for="radioOption1">Option 1</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioOptions" id="radioOption2"
+                                    value="option2">
+                                <label class="form-check-label" for="radioOption2">Option 2</label>
+                            </div>
+                            <hr>
+                            &lt;div class=&quot;form-check&quot;&gt;<br>
+                            &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot;<br>
+                            name=&quot;radioOptions&quot; id=&quot;radioOption1&quot; value=&quot;option1&quot;&gt; <br>
+                            &lt;label class=&quot;form-check-label&quot; for=&quot;radioOption1&quot;&gt;Option <br>
+                            1&lt;/label&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;form-check&quot;&gt;<br>
+                            &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot;<br>
+                            name=&quot;radioOptions&quot; id=&quot;radioOption2&quot; value=&quot;option2&quot;&gt;<br>
+                            &lt;label class=&quot;form-check-label&quot; for=&quot;radioOption2&quot;&gt;Option <br>
+                            2&lt;/label&gt;<br>
+                            &lt;/div&gt;
+                        </div>
+                    </div>
+                    <p class="fw-bold text-white fs-5 ps-3">Basic Checkboxes:</p>
+                    <p class="fw-light pb-3 text-white ps-3">To create a basic checkbox in Bootstrap, use the <b
+                            class="fw-bold">input</b> element with the <b class="fw-bold">type="checkbox"</b> attribute
+                        and apply the <b class="fw-bold">.form-check-input</b> class for styling. Associate a label with
+                        the checkbox using the <b class="fw-bold">.form-check-label</b> class.
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkboxOption1" value="option1">
+                                <label class="form-check-label" for="checkboxOption1">Option 1</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkboxOption2" value="option2">
+                                <label class="form-check-label" for="checkboxOption2">Option 2</label>
+                            </div>
+                            <hr>
+                            &lt;div class=&quot;form-check&quot;&gt;<br>
+                            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot;<br>
+                            id=&quot;checkboxOption1&quot; value=&quot;option1&quot;&gt;<br>
+                            &lt;label class=&quot;form-check-label&quot; for=&quot;checkboxOption1&quot;&gt;Option <br>
+                            1&lt;/label&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;form-check&quot;&gt;<br>
+                            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot;<br>
+                            id=&quot;checkboxOption2&quot; value=&quot;option2&quot;&gt;<br>
+                            &lt;label class=&quot;form-check-label&quot; for=&quot;checkboxOption2&quot;&gt;Option <br>
+                            2&lt;/label&gt;<br>
+                            &lt;/div&gt;
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Range" role="tabpanel" aria-labelledby="nav-Range-tab" tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Range</p>
+                    <p class="text-white lh-base ps-5 fw-lighter fs-5">Use our custom range inputs for consistent
+                        cross-browser styling and built-in customization.</p>
+                    <p class="fw-bold text-white fs-5 ps-3">Create a Range Input:</p>
+                    <p class="fw-light pb-3 text-white ps-3">To create a range input in HTML, use the <b
+                            class="fw-bold">input</b>element with the <b class="fw-bold">type="range"</b> attribute.
+                        This input allows users to select a value by moving a slider.
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <label for="customRange1" class="form-label">Example range</label>
+                            <input type="range" class="form-range" id="customRange1">
+                            <hr>
+                            &lt;label for=&quot;customRange1&quot; class=&quot;form-label&quot;&gt;Example
+                            range&lt;/label&gt;<br>
+                            &lt;input type=&quot;range&quot; class=&quot;form-range&quot;
+                            id=&quot;customRange1&quot;&gt;
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Input" role="tabpanel" aria-labelledby="nav-Input-tab" tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Input</p>
+                    <p class="text-white lh-base ps-5 fw-lighter fs-5">
+                        In Bootstrap, an input group is a useful component that allows you to combine text inputs or
+                        form controls with additional elements such as buttons, dropdowns, or icons. This can help
+                        improve the usability and functionality of your forms by presenting related elements in a
+                        cohesive manner. Here's an overview of input groups in Bootstrap:</p>
+                    <p class="fw-bold text-white fs-5 ps-3">Wrapping </p>
+                    <p class="fw-light pb-3 text-white ps-3">Input groups wrap by default via
+                        <b class="text-danger">flex-wrap: wrap</b> in order to accommodate custom form field validation
+                        within an input group. You may disable this with <b class="text-danger">.flex-nowrap.</b>
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                    aria-describedby="addon-wrapping">
+                            </div>
+                            <hr>
+                            &lt;div class=&quot;input-group flex-nowrap&quot;&gt;<br>
+                            &lt;span class=&quot;input-group-text&quot;
+                            id=&quot;addon-wrapping&quot;&gt;@&lt;/span&gt;<br>
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot;<br>
+                            placeholder=&quot;Username&quot; aria-label=&quot;Username&quot;<br>
+                            aria-describedby=&quot;addon-wrapping&quot;&gt;<br>
+                            &lt;/div&gt;<br>
+                        </div>
+                    </div>
+                    <p class="fw-bold text-white fs-5 ps-3">Sizing</p>
+                    <p class="fw-light pb-3 text-white ps-3">Add the relative form sizing classes to the <b
+                            class="fw-bold">.input-group</b> itself and contents within will automatically resize—no
+                        need for repeating the form control size classes on each element.
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default">
+                            </div>
+
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-lg">
+                            </div>
+                            <hr>
+                            &lt;div class=&quot;input-group input-group-sm mb-3&quot;&gt;<br>
+                            &lt;span class=&quot;input-group-text&quot;<br>
+                            id=&quot;inputGroup-sizing-sm&quot;&gt;Small&lt;/span&gt;<br>
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Sizing<br>
+                            example input&quot; aria-describedby=&quot;inputGroup-sizing-sm&quot;&gt;<br>
+                            &lt;/div&gt;<br>
+
+                            &lt;div class=&quot;input-group mb-3&quot;&gt;<br>
+                            &lt;span class=&quot;input-group-text&quot;<br>
+                            id=&quot;inputGroup-sizing-default&quot;&gt;Default&lt;/span&gt;<br>
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Sizing<br>
+                            example input&quot; aria-describedby=&quot;inputGroup-sizing-default&quot;&gt;<br>
+                            &lt;/div&gt;<br>
+
+                            &lt;div class=&quot;input-group input-group-lg&quot;&gt;<br>
+                            &lt;span class=&quot;input-group-text&quot;<br>
+                            id=&quot;inputGroup-sizing-lg&quot;&gt;Large&lt;/span&gt;<br>
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Sizing<br>
+                            example input&quot; aria-describedby=&quot;inputGroup-sizing-lg&quot;&gt;<br>
+                            &lt;/div&gt;
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Layout" role="tabpanel" aria-labelledby="nav-Layout-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Layout</p>
+                    <p class="text-white lh-base ps-5 fw-lighter fs-5">Give your forms some structure—from inline to
+                        horizontal to custom grid implementations—with our form layout options</p>
+                    <p class="fw-bold text-white fs-5 ps-3">Forms-layout</p>
+                    <div class="code-plate ps-3 pt-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <form class="row gx-3 gy-2 align-items-center">
+                                <div class="col-sm-3">
+                                    <label class="visually-hidden" for="specificSizeInputName">Name</label>
+                                    <input type="text" class="form-control" id="specificSizeInputName"
+                                        placeholder="Jane Doe">
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="visually-hidden" for="specificSizeInputGroupUsername">Username</label>
+                                    <div class="input-group">
+                                        <div class="input-group-text">@</div>
+                                        <input type="text" class="form-control" id="specificSizeInputGroupUsername"
+                                            placeholder="Username">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+                                    <select class="form-select" id="specificSizeSelect">
+                                        <option selected>Choose...</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                                        <label class="form-check-label" for="autoSizingCheck2">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </form>
+                            <hr>
+                            &lt;form class=&quot;row gx-3 gy-2 align-items-center&quot;&gt;<br>
+                            &lt;div class=&quot;col-sm-3&quot;&gt;<br>
+                            &lt;label class=&quot;visually-hidden&quot;<br>
+                            for=&quot;specificSizeInputName&quot;&gt;Name&lt;/label&gt;<br>
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot;<br>
+                            id=&quot;specificSizeInputName&quot; placeholder=&quot;Jane Doe&quot;&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;col-sm-3&quot;&gt;<br>
+                            &lt;label class=&quot;visually-hidden&quot;<br>
+                            for=&quot;specificSizeInputGroupUsername&quot;&gt;Username&lt;/label&gt;<br>
+                            &lt;div class=&quot;input-group&quot;&gt;<br>
+                            &lt;div class=&quot;input-group-text&quot;&gt;@&lt;/div&gt;<br>
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot;<br>
+                            id=&quot;specificSizeInputGroupUsername&quot; placeholder=&quot;Username&quot;&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;col-sm-3&quot;&gt;<br>
+                            &lt;label class=&quot;visually-hidden&quot;<br>
+                            for=&quot;specificSizeSelect&quot;&gt;Preference&lt;/label&gt;<br>
+                            &lt;select class=&quot;form-select&quot; id=&quot;specificSizeSelect&quot;&gt;<br>
+                            &lt;option selected&gt;Choose...&lt;/option&gt;<br>
+                            &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;<br>
+                            &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;v<br>
+                            &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;<br>
+                            &lt;/select&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;col-auto&quot;&gt;<br>
+                            &lt;div class=&quot;form-check&quot;&gt;<br>
+                            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot;<br>
+                            id=&quot;autoSizingCheck2&quot;&gt;<br>
+                            &lt;label class=&quot;form-check-label&quot; for=&quot;autoSizingCheck2&quot;&gt;<br>
+                            Remember me<br>
+                            &lt;/label&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;col-auto&quot;&gt;<br>
+                            &lt;button type=&quot;submit&quot; class=&quot;btn<br>
+                            btn-primary&quot;&gt;Submit&lt;/button&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/form&gt;
+                        </div>
+                    </div>
+                    <p class="fw-light pb-3 text-white ps-3">More complex layouts can also be created with the grid
+                        system.</p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputAddress" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress"
+                                        placeholder="1234 Main St">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputAddress2" class="form-label">Address 2</label>
+                                    <input type="text" class="form-control" id="inputAddress2"
+                                        placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputCity" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputState" class="form-label">State</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputZip" class="form-label">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Check me out
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                </div>
+                            </form>
+                            <hr>
+                            &lt;form class=&quot;row g-3&quot;&gt;<br>
+                            &lt;div class=&quot;col-md-6&quot;&gt;<br>
+                            &lt;label for=&quot;inputEmail4&quot;
+                            class=&quot;form-label&quot;&gt;Email&lt;/label&gt;<br>
+                            &lt;input type=&quot;email&quot; class=&quot;form-control&quot;
+                            id=&quot;inputEmail4&quot;&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;col-md-6&quot;&gt;<br>
+                            &lt;label for=&quot;inputPassword4&quot;
+                            class=&quot;form-label&quot;&gt;Password&lt;/label&gt;<br>
+                            &lt;input type=&quot;password&quot; class=&quot;form-control&quot;
+                            id=&quot;inputPassword4&quot;&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;col-12&quot;&gt;<br>
+                            &lt;label for=&quot;inputAddress&quot;
+                            class=&quot;form-label&quot;&gt;Address&lt;/label&gt;<br>
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputAddress&quot;
+                            placeholder=&quot;1234 Main St&quot;&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;col-12&quot;&gt;<br>
+                            &lt;label for=&quot;inputAddress2&quot; class=&quot;form-label&quot;&gt;Address
+                            2&lt;/label&gt;<br>
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputAddress2&quot;
+                            placeholder=&quot;Apartment, studio, or floor&quot;&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;col-md-6&quot;&gt;<br>
+                            &lt;label for=&quot;inputCity&quot; class=&quot;form-label&quot;&gt;City&lt;/label&gt;<br>
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot;
+                            id=&quot;inputCity&quot;&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;col-md-4&quot;&gt;<br>
+                            &lt;label for=&quot;inputState&quot; class=&quot;form-label&quot;&gt;State&lt;/label&gt;<br>
+                            &lt;select id=&quot;inputState&quot; class=&quot;form-select&quot;&gt;<br>
+                            &lt;option selected&gt;Choose...&lt;/option&gt;<br>
+                            &lt;option&gt;...&lt;/option&gt;<br>
+                            &lt;/select&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;col-md-2&quot;&gt;<br>
+                            &lt;label for=&quot;inputZip&quot; class=&quot;form-label&quot;&gt;Zip&lt;/label&gt;<br>
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot;
+                            id=&quot;inputZip&quot;&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;col-12&quot;&gt;<br>
+                            &lt;div class=&quot;form-check&quot;&gt;<br>
+                            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot;
+                            id=&quot;gridCheck&quot;&gt;<br>
+                            &lt;label class=&quot;form-check-label&quot; for=&quot;gridCheck&quot;&gt;<br>
+                            Check me out<br>
+                            &lt;/label&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;col-12&quot;&gt;<br>
+                            &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Sign
+                            in&lt;/button&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/form&gt;<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade" id="nav-Background" role="tabpanel" aria-labelledby="nav-Background-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Background</p>
+                    <p class="text-white lh-base ps-5 fw-lighter fs-5">Convey meaning through <span
+                            class="text-danger">background-color</span> and add decoration with gradients.</p>
+                    <p class="fw-bold text-white fs-5 ps-3">Background color</p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+                            <div class="p-3 mb-2 bg-primary-subtle text-emphasis-primary">.bg-primary-subtle</div>
+                            <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+                            <div class="p-3 mb-2 bg-secondary-subtle text-emphasis-secondary">.bg-secondary-subtle</div>
+                            <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+                            <div class="p-3 mb-2 bg-success-subtle text-emphasis-success">.bg-success-subtle</div>
+                            <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+                            <div class="p-3 mb-2 bg-body text-body">.bg-body</div>
+                            <div class="p-3 mb-2 bg-black text-white">.bg-black</div>
+                            <hr>
+                            &lt;div class=&quot;p-3 mb-2 bg-primary text-white&quot;&gt;.bg-primary&lt;/div&gt;<br>
+                            &lt;div class=&quot;p-3 mb-2 bg-primary-subtle
+                            text-emphasis-primary&quot;&gt;.bg-primary-subtle&lt;/div&gt;<br>
+                            &lt;div class=&quot;p-3 mb-2 bg-secondary text-white&quot;&gt;.bg-secondary&lt;/div&gt;<br>
+                            &lt;div class=&quot;p-3 mb-2 bg-secondary-subtle
+                            text-emphasis-secondary&quot;&gt;.bg-secondary-subtle&lt;/div&gt;<br>
+                            &lt;div class=&quot;p-3 mb-2 bg-success text-white&quot;&gt;.bg-success&lt;/div&gt;<br>
+                            &lt;div class=&quot;p-3 mb-2 bg-success-subtle
+                            text-emphasis-success&quot;&gt;.bg-success-subtle&lt;/div&gt;<br>
+                            &lt;div class=&quot;p-3 mb-2 bg-danger text-white&quot;&gt;.bg-danger&lt;/div&gt;<br>
+                            &lt;div class=&quot;p-3 mb-2 bg-body text-body&quot;&gt;.bg-body&lt;/div&gt;<br>
+                            &lt;div class=&quot;p-3 mb-2 bg-black text-white&quot;&gt;.bg-black&lt;/div&gt;<br>
+                        </div>
+                    </div>
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4 mb-2">Background Color Opacity</p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <div class="bg-success p-2 text-white">This is default success background</div>
+                            <div class="bg-success p-2 text-white bg-opacity-75">This is 75% opacity success background
+                            </div>
+                            <div class="bg-success p-2 text-dark bg-opacity-50">This is 50% opacity success background
+                            </div>
+                            <div class="bg-success p-2 text-dark bg-opacity-25">This is 25% opacity success background
+                            </div>
+                            <div class="bg-success p-2 text-dark bg-opacity-10">This is 10% opacity success background
+                            </div>
+                            <hr>
+                            &lt;div class=&quot;bg-success p-2 text-white&quot;&gt;This is default success
+                            background&lt;/div&gt;<br>
+                            &lt;div class=&quot;bg-success p-2 text-white bg-opacity-75&quot;&gt;This is 75% opacity
+                            success background&lt;/div&gt;<br>
+                            &lt;div class=&quot;bg-success p-2 text-dark bg-opacity-50&quot;&gt;This is 50% opacity
+                            success background&lt;/div&gt;<br>
+                            &lt;div class=&quot;bg-success p-2 text-dark bg-opacity-25&quot;&gt;This is 25% opacity
+                            success background&lt;/div&gt;<br>
+                            &lt;div class=&quot;bg-success p-2 text-dark bg-opacity-10&quot;&gt;This is 10% opacity
+                            success background&lt;/div&gt;
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Borders" role="tabpanel" aria-labelledby="nav-Borders-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Borders</p>
+                    <p class="text-white lh-base ps-5 fw-lighter fs-5">Use border utilities to quickly style the border
+                        and border-radius of an element. Great for images, buttons, or any other element.</p>
+                    <p class="fw-bold text-white fs-5 ps-3">Custom </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            &lt;span class=&quot;border&quot;&gt;&lt;/span&gt;<br>
+                            &lt;span class=&quot;border-top&quot;&gt;&lt;/span&gt;<br>
+                            &lt;span class=&quot;border-end&quot;&gt;&lt;/span&gt;<br>
+                            &lt;span class=&quot;border-bottom&quot;&gt;&lt;/span&gt;<br>
+                            &lt;span class=&quot;border-start&quot;&gt;&lt;/span&gt;<br>
+                        </div>
+                    </div>
+                    <p class="fw-bold text-white fs-5 ps-3">Radius </p>
+                    <p class="fw-light pb-3 text-white ps-3">Input groups wrap by default via
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            &lt;img src=&quot;...&quot; class=&quot;rounded&quot; alt=&quot;...&quot;&gt;<br>
+                            &lt;img src=&quot;...&quot; class=&quot;rounded-top&quot; alt=&quot;...&quot;&gt;<br>
+                            &lt;img src=&quot;...&quot; class=&quot;rounded-end&quot; alt=&quot;...&quot;&gt;<br>
+                            &lt;img src=&quot;...&quot; class=&quot;rounded-bottom&quot; alt=&quot;...&quot;&gt;<br>
+                            &lt;img src=&quot;...&quot; class=&quot;rounded-start&quot; alt=&quot;...&quot;&gt;<br>
+                            &lt;img src=&quot;...&quot; class=&quot;rounded-circle&quot; alt=&quot;...&quot;&gt;<br>
+                            &lt;img src=&quot;...&quot; class=&quot;rounded-pill&quot; alt=&quot;...&quot;&gt;
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Colors" role="tabpanel" aria-labelledby="nav-Colors-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Colors</p>
+                    <p class="fw-light pb-3 text-white ps-3">Colorize text with color utilities. If you want to colorize
+                        links, you can use the <span class="text-danger">.link-*</span> helper classes which have <span
+                            class="text-danger">:hover</span> and <span class="text-danger">:focus</span> states.Color
+                        utilities like <span class="text-danger">.text</span>
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <p class="text-primary">.text-primary</p>
+                            <p class="text-primary-emphasis">.text-primary-emphasis</p>
+                            <p class="text-secondary">.text-secondary</p>
+                            <p class="text-secondary-emphasis">.text-secondary-emphasis</p>
+                            <p class="text-success">.text-success</p>
+                            <p class="text-success-emphasis">.text-success-emphasis</p>
+                            <p class="text-danger">.text-danger</p>
+                            <p class="text-black bg-white">.text-black</p>
+                            <p class="text-white bg-dark">.text-white</p>
+                            <hr>
+                            &lt;p class=&quot;text-primary&quot;&gt;.text-primary&lt;/p&gt;<br>
+                            &lt;p class=&quot;text-primary-emphasis&quot;&gt;.text-primary-emphasis&lt;/p&gt;<br>
+                            &lt;p class=&quot;text-secondary&quot;&gt;.text-secondary&lt;/p&gt;<br>
+                            &lt;p class=&quot;text-secondary-emphasis&quot;&gt;.text-secondary-emphasis&lt;/p&gt;<br>
+                            &lt;p class=&quot;text-success&quot;&gt;.text-success&lt;/p&gt;<br>
+                            &lt;p class=&quot;text-success-emphasis&quot;&gt;.text-success-emphasis&lt;/p&gt;<br>
+                            &lt;p class=&quot;text-danger&quot;&gt;.text-danger&lt;/p&gt;<br>
+                            &lt;p class=&quot;text-black bg-white&quot;&gt;.text-black&lt;/p&gt;<br>
+                            &lt;p class=&quot;text-white bg-dark&quot;&gt;.text-white&lt;/p&gt;
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Display" role="tabpanel" aria-labelledby="nav-Display-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Display</p>
+                    <p class="fw-bold text-white fs-5 ps-3">Examples</p>
+                    <p class="fw-light pb-3 text-white ps-3">Quickly and responsively toggle the display value of
+                        components and more with our display utilities. Includes support for some of the more common
+                        values, as well as some extras for controlling display when printing.
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <div class="d-inline p-2 text-bg-primary">d-inline</div>
+                            <span class="d-block p-2 text-bg-primary">d-block</span>
+                            <hr>
+                            &lt;p class=&quot;text-primary&quot;&gt;.text-primary&lt;/p&gt;<br>
+                            &lt;p class=&quot;text-primary-emphasis&quot;&gt;.text-primary-&lt;<br>
+                            div class=&quot;d-inline p-2 text-bg-primary&quot;&gt;d-inline&lt;/div&gt;<br>
+                            &lt;span class=&quot;d-block p-2 text-bg-primary&quot;&gt;d-block&lt;/span&gt;
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Flex" role="tabpanel" aria-labelledby="nav-flex-tab" tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Flex</p>
+                    <p class="fw-bold text-white fs-5 ps-3">Direction</p>
+                    <p class="fw-light pb-3 text-white ps-3">Use <span class="text-danger">.flex-row &
+                            .flex-column</span> to set a horizontal direction (the browser default), or <span
+                            class="text-danger">.flex-row-reverse & .flex-column-reverse</span> to start the horizontal
+                        direction from the opposite side.
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <div class="d-flex flex-row mb-3 bg-primary">
+                                <div class="p-2">Flex item 1</div>
+                                <div class="p-2">Flex item 2</div>
+                                <div class="p-2">Flex item 3</div>
+                            </div>
+                            <div class="d-flex flex-column mb-3 bg-primary">
+                                <div class="p-2">Flex item 1</div>
+                                <div class="p-2">Flex item 2</div>
+                                <div class="p-2">Flex item 3</div>
+                            </div>
+                            <hr>
+                            &lt;div class=&quot;d-flex flex-row mb-3 bg-primary&quot;&gt;<br>
+                            &lt;div class=&quot;p-2&quot;&gt;Flex item 1&lt;/div&gt;<br>
+                            &lt;div class=&quot;p-2&quot;&gt;Flex item 2&lt;/div&gt;<br>
+                            &lt;div class=&quot;p-2&quot;&gt;Flex item 3&lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;d-flex flex-column mb-3 background&quot;&gt;<br>
+                            &lt;div class=&quot;p-2&quot;&gt;Flex item 1&lt;/div&gt;<br>
+                            &lt;div class=&quot;p-2&quot;&gt;Flex item 2&lt;/div&gt;<br>
+                            &lt;div class=&quot;p-2&quot;&gt;Flex item 3&lt;/div&gt;<br>
+                            &lt;/div&gt;
+                        </div>
+                    </div>
+                    <p class="fw-bold text-white fs-5 ps-3">Justify content</p>
+                    <p class="fw-light pb-3 text-white ps-3">Use justify-content utilities on flexbox containers to
+                        change the alignment of flex items on the main axis (the x-axis to start, y-axis if
+                        flex-direction: column). Choose from start (browser default), <span class="text-danger">end,
+                            center, between, around, or evenly.</span>
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <div class="d-flex justify-content-start bg-primary">justify-content-start</div>
+                            <div class="d-flex justify-content-end bg-primary">justify-content-end</div>
+                            <div class="d-flex justify-content-center bg-primary">justify-content-center</div>
+                            <div class="d-flex justify-content-between bg-primary">justify-content-between</div>
+                            <div class="d-flex justify-content-around bg-primary">justify-content-around</div>
+                            <div class="d-flex justify-content-evenly bg-primary">justify-content-evenly </div>
+                            <hr>
+                            &lt;div class=&quot;d-flex justify-content-start bg-primary&quot;&gt;...&lt;/div&gt;<br>
+                            &lt;div class=&quot;d-flex justify-content-end bg-primary&quot;&gt;...&lt;/div&gt;<br>
+                            &lt;div class=&quot;d-flex justify-content-center bg-primary&quot;&gt;...&lt;/div&gt;<br>
+                            &lt;div class=&quot;d-flex justify-content-between bg-primary&quot;&gt;...&lt;/div&gt;<br>
+                            &lt;div class=&quot;d-flex justify-content-around bg-primary&quot;&gt;...&lt;/div&gt;<br>
+                            &lt;div class=&quot;d-flex justify-content-evenly bg-primary&quot;&gt;...&lt;/div&gt;<br>
+                        </div>
+                    </div>
+                    <p class="fw-bold text-white fs-5 ps-3">Align self </p>
+                    <p class="fw-light pb-3 text-white ps-3">. Choose from the same options as align-items: <span
+                            class="text-danger">start, end, center, baseline, or stretch </span> (browser default).
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <div class="align-self-start bg-primary">Aligned flex item</div>
+                            <div class="align-self-end bg-primary">Aligned flex item</div>
+                            <div class="align-self-center bg-primary">Aligned flex item</div>
+                            <div class="align-self-baseline bg-primary">Aligned flex item</div>
+                            <div class="align-self-stretch bg-primary">Aligned flex item</div>
+                            <hr>
+                            &lt;div class=&quot;align-self-start bg-primary&quot;&gt;Aligned flex item&lt;/div&gt;<br>
+                            &lt;div class=&quot;align-self-end bg-primary&quot;&gt;Aligned flex item&lt;/div&gt;<br>
+                            &lt;div class=&quot;align-self-center bg-primary&quot;&gt;Aligned flex item&lt;/div&gt;<br>
+                            &lt;div class=&quot;align-self-baseline bg-primary&quot;&gt;Aligned flex
+                            item&lt;/div&gt;<br>
+                            &lt;div class=&quot;align-self-stretch bg-primary&quot;&gt;Aligned flex item&lt;/div&gt;
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Link" role="tabpanel" aria-labelledby="nav-Link-tab" tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Link</p>
+                    <p class="fw-bold text-white fs-5 ps-3">Link underlines </p>
+                    <p class="fw-light pb-3 text-white ps-3">Change the underline’s color independent of the link text
+                        color.
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <p><a href="#" class="link-underline-primary">Primary underline</a></p>
+                            <p><a href="#" class="link-underline-secondary">Secondary underline</a></p>
+                            <p><a href="#" class="link-underline-success">Success underline</a></p>
+                            <p><a href="#" class="link-underline-danger">Danger underline</a></p>
+                            <hr>
+                            &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;link-underline-primary&quot;&gt;Primary
+                            underline&lt;/a&gt;&lt;/p&gt;<br>
+                            &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;link-underline-secondary&quot;&gt;Secondary
+                            underline&lt;/a&gt;&lt;/p&gt;<br>
+                            &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;link-underline-success&quot;&gt;Success
+                            underline&lt;/a&gt;&lt;/p&gt;<br>
+                            &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;link-underline-danger&quot;&gt;Danger
+                            underline&lt;/a&gt;&lt;/p&gt;
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Opacity" role="tabpanel" aria-labelledby="nav-Opacity-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Opacity</p>
+                    <p class="fw-bold text-white fs-5 ps-3">Control the opacity of elements.</p>
+                    <p class="fw-light pb-3 text-white ps-3">Input groups wrap by default via
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <div class="opacity-100 bg-primary">123</div>
+                            <div class="opacity-75 bg-primary">123</div>
+                            <div class="opacity-50 bg-primary">123</div>
+                            <div class="opacity-25 bg-primary">123</div>
+                            <div class="opacity-0 bg-primary">123</div>
+                            <hr>
+                            &lt;div class=&quot;opacity-100&quot;&gt;...&lt;/div&gt;<br>
+                            &lt;div class=&quot;opacity-75&quot;&gt;...&lt;/div&gt;<br>
+                            &lt;div class=&quot;opacity-50&quot;&gt;...&lt;/div&gt;<br>
+                            &lt;div class=&quot;opacity-25&quot;&gt;...&lt;/div&gt;<br>
+                            &lt;div class=&quot;opacity-0&quot;&gt;...&lt;/div&gt;
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Overflow" role="tabpanel" aria-labelledby="nav-Overflow-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Overflow</p>
+                    <p class="fw-bold text-white fs-5 ps-3">overflow-x-y</p>
+                    <p class="fw-light pb-3 text-white ps-3">Adjust the overflow property on the fly with four default
+                        values and classes. These classes are not responsive by default.
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            &lt;div class=&quot;overflow-x-auto&quot;&gt;...&lt;/div&gt;<br>
+                            &lt;div class=&quot;overflow-x-hidden&quot;&gt;...&lt;/div&gt;<br>
+                            &lt;div class=&quot;overflow-y-visible&quot;&gt;...&lt;/div&gt;<br>
+                            &lt;div class=&quot;overflow-y-scroll&quot;&gt;...&lt;/div&gt;
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Position" role="tabpanel" aria-labelledby="nav-Position-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Position</p>
+                    <p class="fw-bold text-white fs-5 ps-3">Position values</p>
+                    <p class="fw-light pb-3 text-white ps-3">Quick positioning classes are available, though they are
+                        not responsive.
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            &lt;div class=&quot;position-static&quot;&gt;...&lt;/div&gt;<br>
+                            &lt;div class=&quot;position-relative&quot;&gt;...&lt;/div&gt;<br>
+                            &lt;div class=&quot;position-absolute&quot;&gt;...&lt;/div&gt;<br>
+                            &lt;div class=&quot;position-fixed&quot;&gt;...&lt;/div&gt;<br>
+                            &lt;div class=&quot;position-sticky&quot;&gt;...&lt;/div&gt;
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Shadows" role="tabpanel" aria-labelledby="nav-Shadows-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Shadows</p>
+                    <p class="fw-bold text-white fs-5 ps-3">Custom Shadow Level:</p>
+                    <p class="fw-light pb-3 text-white ps-3">If you want to apply a custom shadow level, you can use the
+                        .shadow-{level} class, where {level} is the desired shadow level, such as <b class="fw-bold">1,
+                            2, 3, 4, or 5.</b>
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            &lt;div class=&quot;shadow-1&quot;&gt;This div has a custom shadow level.&lt;/div&gt;<br>
+                            &lt;div class=&quot;shadow-2&quot;&gt;This div has a custom shadow level.&lt;/div&gt;<br>
+                            &lt;div class=&quot;shadow-3&quot;&gt;This div has a custom shadow level.&lt;/div&gt;<br>
+                            &lt;div class=&quot;shadow-4&quot;&gt;This div has a custom shadow level.&lt;/div&gt;
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Spaces" role="tabpanel" aria-labelledby="nav-Spaces-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Spaces</p>
+                    <p class="text-white lh-base ps-5 fw-lighter fs-5">Bootstrap includes a wide range of shorthand
+                        responsive margin, padding, and gap utility classes to modify an element’s appearance.</p>
+                    <p class="fw-bold text-white fs-5 ps-3">Margin & Padding</p>
+                    <p class="text-white fs-5 fw-light">Where property is one of:</p>
+                    <ul>
+                        <li class="text-white fs-6"><b class="fw-bold">m </b>- for classes that set margin</li>
+                        <li class="text-white fs-6"><b class="fw-bold">p</b> - for classes that set padding</li>
+                    </ul>
+                    <p class="text-white fs-5 fw-light">Where sides is one of:</p>
+                    <ul>
+                        <li class="text-white fs-6"><b class="fw-bold">t</b> - for classes that set margin-top or
+                            padding-top</li>
+                        <li class="text-white fs-6"><b class="fw-bold">b</b> - for classes that set margin-bottom or
+                            padding-bottom</li>
+                        <li class="text-white fs-6"><b class="fw-bold">s</b> - (start) for classes that set margin-left
+                            or padding-left in LTR, margin-right or padding-right in RTL</li>
+                        <li class="text-white fs-6"><b class="fw-bold">e</b> - (end) for classes that set margin-right
+                            or padding-right in LTR, margin-left or padding-left in RTL</li>
+                        <li class="text-white fs-6"><b class="fw-bold">x</b> - for classes that set both *-left and
+                            *-right</li>
+                        <li class="text-white fs-6"><b class="fw-bold">y</b> - for classes that set both *-top and
+                            *-bottom</li>
+                    </ul>
+                    <p class="fw-bold text-white fs-5 ps-3">Grid Gap</p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            &lt;div class=&quot;grid gap-0 row-gap-3&quot;&gt;<br>
+                            &lt;div class=&quot;p-2 g-col-6 bg-primary&quot;&gt;Grid item 1&lt;/div&gt;<br>
+                            &lt;div class=&quot;p-2 g-col-6 bg-primary&quot;&gt;Grid item 2&lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class=&quot;grid gap-0 column-gap-3&quot;&gt;<br>
+                            &lt;div class=&quot;p-2 g-col-6 bg-primary&quot;&gt;Grid item 1&lt;/div&gt;<br>
+                            &lt;div class=&quot;p-2 g-col-6 bg-primary&quot;&gt;Grid item 2&lt;/div&gt;<br>
+                            &lt;/div&gt;
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Text" role="tabpanel" aria-labelledby="nav-Text-tab" tabindex="0">
+                    <p class="fs-1 fw-bold text-white-50 pt-5 ps-4">Text</p>
+                    <p class="text-white lh-base ps-5 fw-lighter fs-5">Documentation and examples for common text
+                        utilities to control alignment, wrapping, weight, and more.</p>
+                    <p class="fw-bold text-white fs-5 ps-3">Text alignment</p>
+                    <p class="fw-light pb-3 text-white ps-3">Easily realign text to components with text alignment
+                        classes. For start, end, and center alignment, responsive classes are available that use the
+                        same viewport width breakpoints as the grid system.
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <p class="text-start">Start aligned text on all viewport sizes.</p>
+                            <p class="text-center">Center aligned text on all viewport sizes.</p>
+                            <p class="text-end">End aligned text on all viewport sizes.</p>
+                            <hr>
+                            &lt;div class=&quot;grid gap-0 row-gap-3&quot;&gt;<br>
+                            &lt;p class=&quot;text-start&quot;&gt;Start aligned text on all viewport
+                            sizes.&lt;/p&gt;<br>
+                            &lt;p class=&quot;text-center&quot;&gt;Center aligned text on all viewport
+                            sizes.&lt;/p&gt;<br>
+                            &lt;p class=&quot;text-end&quot;&gt;End aligned text on all viewport sizes.&lt;/p&gt;
+                        </div>
+                    </div>
+                    <p class="fw-bold text-white fs-5 ps-3">Text transform</p>
+                    <p class="fw-light pb-3 text-white ps-3">Transform text in components with text capitalization
+                        classes.
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <p class="text-lowercase">Lowercased text.</p>
+                            <p class="text-uppercase">Uppercased text.</p>
+                            <p class="text-capitalize">CapiTaliZed text.</p>
+                            <hr>
+                            &lt;p class=&quot;text-lowercase&quot;&gt;Lowercased text.&lt;/p&gt;<br>
+                            &lt;p class=&quot;text-uppercase&quot;&gt;Uppercased text.&lt;/p&gt;<br>
+                            &lt;p class=&quot;text-capitalize&quot;&gt;CapiTaliZed text.&lt;/p&gt;
+                        </div>
+                    </div>
+                    <p class="fw-bold text-white fs-5 ps-3">Font size</p>
+                    <p class="fw-light pb-3 text-white ps-3">Quickly change the font-size of text.
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <p class="fs-1">.fs-1 text</p>
+                            <p class="fs-2">.fs-2 text</p>
+                            <p class="fs-3">.fs-3 text</p>
+                            <p class="fs-4">.fs-4 text</p>
+                            <p class="fs-5">.fs-5 text</p>
+                            <p class="fs-6">.fs-6 text</p>
+                            <hr>
+                            &lt;p class=&quot;fs-1&quot;&gt;.fs-1 text&lt;/p&gt;<br>
+                            &lt;p class=&quot;fs-2&quot;&gt;.fs-2 text&lt;/p&gt;<br>
+                            &lt;p class=&quot;fs-3&quot;&gt;.fs-3 text&lt;/p&gt;<br>
+                            &lt;p class=&quot;fs-4&quot;&gt;.fs-4 text&lt;/p&gt;<br>
+                            &lt;p class=&quot;fs-5&quot;&gt;.fs-5 text&lt;/p&gt;<br>
+                            &lt;p class=&quot;fs-6&quot;&gt;.fs-6 text&lt;/p&gt;
+                        </div>
+                    </div>
+                    <p class="fw-bold text-white fs-5 ps-3">Font weight and italics</p>
+                    <p class="fw-light pb-3 text-white ps-3">Quickly change the font-weight or font-style of text with
+                        these utilities.
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <p class="fw-bold">Bold text.</p>
+                            <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+                            <p class="fw-semibold">Semibold weight text.</p>
+                            <p class="fw-medium">Medium weight text.</p>
+                            <p class="fw-normal">Normal weight text.</p>
+                            <p class="fw-light">Light weight text.</p>
+                            <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+                            <p class="fst-italic">Italic text.</p>
+                            <p class="fst-normal">Text with normal font style</p>
+                            <hr>
+                            &lt;p class=&quot;fw-bold&quot;&gt;Bold text.&lt;/p&gt;<br>
+                            &lt;p class=&quot;fw-bolder&quot;&gt;Bolder weight text (relative to the parent
+                            element).&lt;/p&gt;<br>
+                            &lt;p class=&quot;fw-semibold&quot;&gt;Semibold weight text.&lt;/p&gt;<br>
+                            &lt;p class=&quot;fw-medium&quot;&gt;Medium weight text.&lt;/p&gt;<br>
+                            &lt;p class=&quot;fw-normal&quot;&gt;Normal weight text.&lt;/p&gt;<br>
+                            &lt;p class=&quot;fw-light&quot;&gt;Light weight text.&lt;/p&gt;<br>
+                            &lt;p class=&quot;fw-lighter&quot;&gt;Lighter weight text (relative to the parent
+                            element).&lt;/p&gt;<br>
+                            &lt;p class=&quot;fst-italic&quot;&gt;Italic text.&lt;/p&gt;<br>
+                            &lt;p class=&quot;fst-normal&quot;&gt;Text with normal font style&lt;/p&gt;
+                        </div>
+                    </div>
+                    <p class="fw-bold text-white fs-5 ps-3">Line height</p>
+                    <p class="fw-light pb-3 text-white ps-3">Change the line height
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <p class="lh-1">This is a long paragraph written to show how the line-height of an element
+                                is affected by our utilities. Classes are applied to the element itself or sometimes the
+                                parent element. These classes can be customized as needed with our utility API.</p>
+                            <p class="lh-sm">This is a long paragraph written to show how the line-height of an element
+                                is affected by our utilities. Classes are applied to the element itself or sometimes the
+                                parent element. These classes can be customized as needed with our utility API.</p>
+                            <p class="lh-base">This is a long paragraph written to show how the line-height of an
+                                element is affected by our utilities. Classes are applied to the element itself or
+                                sometimes the parent element. These classes can be customized as needed with our utility
+                                API.</p>
+                            <p class="lh-lg">This is a long paragraph written to show how the line-height of an element
+                                is affected by our utilities. Classes are applied to the element itself or sometimes the
+                                parent element. These classes can be customized as needed with our utility API.</p>
+                            <hr>
+                            &lt;p class=&quot;lh-1&quot;&gt;This is a long paragraph written to show how the line-height
+                            of an element is affected by our utilities. Classes are applied to the element itself or
+                            sometimes the parent element. These classes can be customized as needed with our utility
+                            API.&lt;/p&gt;<br>
+                            &lt;p class=&quot;lh-sm&quot;&gt;This is a long paragraph written to show how the
+                            line-height of an element is affected by our utilities. Classes are applied to the element
+                            itself or sometimes the parent element. These classes can be customized as needed with our
+                            utility API.&lt;/p&gt;<br>
+                            &lt;p class=&quot;lh-base&quot;&gt;This is a long paragraph written to show how the
+                            line-height of an element is affected by our utilities. Classes are applied to the element
+                            itself or sometimes the parent element. These classes can be customized as needed with our
+                            utility API.&lt;/p&gt;<br>
+                            &lt;p class=&quot;lh-lg&quot;&gt;This is a long paragraph written to show how the
+                            line-height of an element is affected by our utilities. Classes are applied to the element
+                            itself or sometimes the parent element. These classes can be customized as needed with our
+                            utility API.&lt;/p&gt;
+                        </div>
+                    </div>
+                    <p class="fw-bold text-white fs-5 ps-3">Text decoration</p>
+                    <p class="fw-light pb-3 text-white ps-3">Decorate text in components with text decoration classes.
+                    </p>
+                    <div class="code-plate ps-3">
+                        <div class="plate-head">
+                            <p class="text-white-50 pt-2 ps-3">HTML</p>
+                        </div>
+                        <div class="plate-body ps-2 mb-3">
+                            <p class="text-decoration-underline">This text has a line underneath it.</p>
+                            <p class="text-decoration-line-through">This text has a line going through it.</p>
+                            <a href="#" class="text-decoration-none">This link has its text decoration removed</a>
+                            <hr>
+                            &lt;p class=&quot;text-decoration-underline&quot;&gt;This text has a line underneath
+                            it.&lt;/p&gt;<br>
+                            &lt;p class=&quot;text-decoration-line-through&quot;&gt;This text has a line going through
+                            it.&lt;/p&gt;<br>
+                            &lt;a href=&quot;#&quot; class=&quot;text-decoration-none&quot;&gt;This link has its text
+                            decoration removed&lt;/a&gt;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!---------------------------------------------Bootstrap JS Link--------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
